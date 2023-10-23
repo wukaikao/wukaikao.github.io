@@ -151,135 +151,104 @@
               without crashing cars in the real world.
             </p>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+  <div class="col-sm mt-3 mt-md-0">
+    <figure>
+      <picture>
+        <!-- Fallback to the original file -->
+        <img src="/assets/img/portfolio/1_driving_simulator/Thrustmaster_T150.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Thrustmaster T150" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-  <picture>
-    
+      </picture>
+    </figure>
+  </div>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure>
+      <picture>
+        <!-- Fallback to the original file -->
+        <img src="/assets/img/portfolio/1_driving_simulator/carla_sign.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="carla" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
+      </picture>
+    </figure>
+  </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+  <p>
+    &emsp;The simulator is based on CARLA which is a free, open-source simulator powered by Unreal Engine, 
+    designed to support the development, training, and validation of autonomous driving systems.
+  </p>
+  <p>
+    &emsp;The controller we choosed Thrustmaster T300 RS. A High-end racing simulator featuring 1080 Degree 
+    Force Feedback racing wheel industrial-class brushless motor. For collecting the datas. I built a client
+    program based on python. 
+  </p>
 
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal its glory in the next row of images.</p>
-
+<h4>Processing the controller signal</h4>
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/6.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+  <div class="col-sm mt-3 mt-md-0">
+    <figure>
+      <picture>
+        <!-- Fallback to the original file -->
+        <img src="/assets/img/portfolio/1_driving_simulator/1_driving_simulator_title.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="driving simulator" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+      </picture>
+    </figure>
+  </div>
 </div>
 
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" rel="external nofollow noopener" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
+<p>
+  &emsp;To build a whole testing environment. 
+  I dealt with the controller for the first step. 
+  Carla has built the API to spawn and control the vehicle.
+  But to make the driving feel as same as the real world. 
+  We adjust it with the linear controller and PID controller while 
+  we turn the steering wheel or step on the gas pedal.
+</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+
+<h4>The scenarios of test</h4>
+<div class="row justify-content-sm-center">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure>
+      <picture>
+        <!-- Fallback to the original file -->
+        <img src="/assets/img/portfolio/1_driving_simulator/driving_test_with_gazed_projection.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="scenarios of test" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+      </picture>
+    </figure>
+  </div>
+</div>
+
+<p>
+  &emsp;Carla has built-in features for creating road tracks, 
+  object labels, and controlling vehicles or obstacles in the physical engine.
+</p>
+
+<p>
+  &emsp; Based on these features, we have created several test scenarios such as:
+  <li>
+    Reaction test:
+  </li>
+  <lo>
+    &emsp;Spawn an obstacle randomly. Let drivers stop the vehicle as soon as they can. And collect the time of reaction.
+  </lo>
+  <li>
+    Driving stability test:
+  </li>
+  <lo>
+    &emsp; The driver needs to try to drive stable. The program will score up by the gaze track and the distance between the vehicle and the center of the road.
+  </lo>
+  <li>
+    Reckless driver cuts in:
+  </li>
+  <lo>
+    &emsp;Spawn an aggressive driver cuts in to test the performance of collision detection of our device.  
+  </lo>
+  and so on...
+ </p>
+ <p>
+  &emsp;Our smart dashboard produce the DMS(Driver Monitoring System) that includes the 
+  gaze tracker and the collision detection that able to protect drivers.
+ </p>
+
 
 
           </article>
